@@ -185,3 +185,149 @@ Para contribuir a este proyecto, por favor crea un fork y envía una solicitud d
 
 - [PABLO TORRES] - Desarrollo inicial
 
+
+# 🌳 Informe: Árboles Binarios en Java
+
+Este proyecto contiene 4 ejercicios sobre árboles binarios, implementados y visualizados desde una clase principal `App.java`. Cada ejercicio trabaja con una operación distinta sobre un árbol binario.
+
+---
+
+## ⚙️ Ejercicio 1: Insertar en un Árbol Binario de Búsqueda (BST)
+
+### 📌 ¿Qué hace?
+Inserta valores en un árbol binario de búsqueda (BST), respetando su propiedad:  
+todos los valores menores van a la izquierda, y los mayores a la derecha.
+
+### 🔧 Cómo funciona
+- Se usa la clase `InsertBST`.
+- Se construye el árbol desde la raíz con los valores: `[5, 3, 7, 2, 4, 6, 8]`.
+- Se imprime en consola visualmente usando `printTreeNode2()`.
+
+### 🧩 Clase usada
+- `InsertBST.java`  
+- Modelo de nodo: `Node.java`
+
+### ▶️ Ejemplo en consola:
+```
+ÁRBOL 1 - InsertBST:
+├── 5
+│   ├── 3
+│   │   ├── 2
+│   │   └── 4
+│   └── 7
+│       ├── 6
+│       └── 8
+```
+
+
+---
+
+## 🔁 Ejercicio 2: Invertir un Árbol Binario
+
+### 📌 ¿Qué hace?
+Invierte un árbol binario, intercambiando todos los subárboles izquierdos y derechos.
+
+### 🔧 Cómo funciona
+- Se usa la clase `InvertBinaryTree`.
+- Se construye un árbol manualmente con valores:  
+  `4 → 2 y 7 → (1,3,6,9)`
+- Luego se invierte usando `invertTree()` y se imprime.
+
+### 🧩 Clase usada
+- `InvertBinaryTree.java`
+
+### ▶️ Ejemplo en consola:
+```
+ÁRBOL 2 - InvertBinaryTree:
+├── 4
+│   ├── 7
+│   │   ├── 9
+│   │   └── 6
+│   └── 2
+│       ├── 3
+│       └── 1
+```
+
+---
+
+## 📚 Ejercicio 3: Listar Niveles del Árbol (Recorrido BFS)
+
+### 📌 ¿Qué hace?
+Recorre el árbol nivel por nivel (por anchura) y devuelve los nodos en una lista de niveles.
+
+### 🔧 Cómo funciona
+- Se usa la clase `ListLevels`.
+- Se construye el árbol igual al ejercicio 2 (sin invertir).
+- Se imprime visualmente el árbol.
+- Luego se imprime cada nivel como una lista.
+
+### 🧩 Clase usada
+- `ListLevels.java`
+
+### ▶️ Ejemplo en consola:
+
+```
+ÁRBOL 3 - ListLevels:
+├── 4
+│   ├── 2
+│   │   ├── 1
+│   │   └── 3
+│   └── 7
+│       ├── 6
+│       └── 9
+Niveles:
+[ 4 ]
+[ 2 7 ]
+[ 1 3 6 9 ]
+```
+
+---
+
+## 📏 Ejercicio 4: Calcular Profundidad Máxima del Árbol
+
+### 📌 ¿Qué hace?
+Calcula la profundidad máxima del árbol binario (la rama más larga desde la raíz hasta una hoja).
+
+### 🔧 Cómo funciona
+- Se usa la clase `Depth`.
+- Se construye el árbol manualmente con una rama extra para aumentar la profundidad.
+- Se imprime el árbol y luego la profundidad con `maxDepth()`.
+
+### 🧩 Clase usada
+- `Depth.java`
+
+### ▶️ Ejemplo en consola:
+
+```
+ÁRBOL 4 - Depth:
+├── 4
+│   ├── 2
+│   │   ├── 1
+│   │   ├── 1
+│   │   ├── 1
+│   │   │   ├── 8
+│   │   │   └── null
+│   │   └── 3
+│   └── 7
+Profundidad máxima: 4
+
+
+```
+
+
+---
+
+## 🧠 Requisitos
+
+- Java 8 o superior
+- IDE o terminal para ejecutar `App.java`
+
+---
+
+## 👨‍💻 Autor
+
+Michael Yumbla
+
+
+
+
